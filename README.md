@@ -1,4 +1,4 @@
 # DatePickerView
 
-![image](https://github.com/Anderson1997258/DatePickerView/blob/master/IMG_2668.PNG)
-![image](https://github.com/Anderson1997258/DatePickerView/blob/master/IMG_2669.PNG)
+<img src="https://github.com/Anderson1997258/DatePickerView/blob/master/IMG_2668.PNG" width="414">
+<img src="https://github.com/Anderson1997258/DatePickerView/blob/master/IMG_2669.PNG" width="414">
