@@ -10,11 +10,34 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var edt: UITextField!
+    
+    var viewDatePicker: DatePickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        initView()
     }
 
-
+//  MARK: Init Method
+    func initView() {
+        viewDatePicker = DatePickerView(frame: .default)
+        viewDatePicker.delegate = self
+        
+        edt.inputView = viewDatePicker
+    }
+    
 }
 
+extension ViewController: DatePickerViewDelegate {
+    
+    func done(_ result: String) {
+        edt.text = result
+        edt.endEditing(true)
+    }
+    
+    func cancel() {
+        edt.endEditing(true)
+    }
+}
